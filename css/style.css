@@ -1,0 +1,364 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background:#e4dfd7;
+  }
+  section{
+    padding:1rem 5%;
+  }
+  .heading{
+    text-align: center;
+    font-size: 2.2rem ;
+    padding:1rem;
+    color:#826b48;
+    font-weight: bolder;
+
+}
+.heading2{
+  font-size: 1.8rem ;
+  color:#fca106;
+  font-weight: bolder;
+
+}
+    
+  
+  .heading span,.emp{
+    color:#dc9123;
+  }
+  .emp ,.btn:hover{
+      color: #fca104;
+  }
+  /*====================== nav bar==================== */
+  #logo{
+    color:#ff9900 ;
+    font-weight: bolder;
+}
+.navbar{
+    background-color: #fbf2e3;
+    /* background-color: #815f25; */
+    border-bottom: #dc9123 2px solid;
+  
+   
+
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .cartIcon{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:40px;
+    line-height: 40px;
+    width:40px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background: #ff9900;
+    color:#fbf2e3 ;
+  }
+  .cartIcon:hover{
+    color:#ff9900;
+    background: #826b48;
+    transform: rotate(360deg);
+}
+
+/* ================nav bar end======================= */
+
+
+/* ==============Carousel base class================= */
+.carousel {
+    margin-bottom: 10px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 5rem;
+    z-index: 10;
+  }
+  .carousel-caption > h1{
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 
+    1px -1px 0 rgb(255, 255, 255),
+   -1px 1px 0 rgb(255, 255, 255), 
+   1px 1px 0 rgb(255, 255, 255);
+   letter-spacing:2px;
+   margin-bottom: 45px;
+   font-size: 3rem;
+  }
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 40rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 40rem;
+    opacity: 0.8
+  }
+   /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  .btn{
+    display: inline-block;
+    /* padding:.8rem 3rem; */
+    font-weight: 100;
+    border:.2rem solid #dc9123;
+    color:#dc9123;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    background-color: #fff;
+  }
+  
+  .btn::before{
+      
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:#dc9123;
+    border: #dc9123;
+    transition: .3s linear;
+    z-index: -1;
+  }
+  
+  .btn:hover::before{
+    width:100%;
+    left: 0;
+  }
+  
+  .btn:hover{
+    color:#fff;
+  }
+  /* ==============Carousel base end================= */
+ 
+
+  
+ 
+
+
+/* =====================meal starts================== */
+.meal{
+  background-color: #e4dfd7;
+  padding-bottom: 3rem;
+ 
+
+}
+.meal .mealContainer .col h3{
+  color:#826b48;
+  font-weight: bold;
+
+}
+.meal h1{
+  color: #826b48;
+}
+.meal span{
+  color: #fca106;
+}
+.meal .mealContainer .col .card-body{
+  background-color: #fff;
+}
+.meal .mealContainer .col .card img{
+  opacity: 0.9
+
+}
+.item-details{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.item-price {
+  flex-grow: 1;
+  font-size: 25px;
+  color: #dc9123;
+  font-weight: bold;
+}
+.mealButton{
+
+  font-size: 20px;
+}
+
+.amount{
+  display: flex;
+}
+
+.amount input{
+  width: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: #dc9123;
+  font-weight: bold;
+}
+.amount button{
+  width: 30px;
+  text-align: center;
+  color: #dc9123;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+
+/* =============meal ends================== */
+
+/*========== ABOUT ==========*/
+#about{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.col-md-5 img{
+    width: 500px;
+    height: 300px;
+    border-radius: .5rem;
+    justify-self: center;
+  }
+#history{
+    text-align: right;
+}
+.about{
+    color:#533c1b ;
+    background-color: #fbf2e3;
+    height: 52rem;
+}
+.aboutContent{
+  margin-top: 8rem;
+}
+.expand{
+    background-color: #e4dfd7;
+    color: #fca104;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 0;
+    border: none;
+    text-shadow:
+    -1px -1px 0 #fba414, 
+    1px -1px 0 #fba414,
+   -1px 1px 0 #fba414, 
+   1px 1px 0 #806332;
+   letter-spacing:2px;
+}
+
+/* ================location ==============================*/
+  /* Center align the text within the three columns below the carousel */
+  .location .col-lg-4 {
+    
+    text-align: center;
+  }
+  .location h2 {
+    font-weight: 300;
+  }
+  /* rtl:begin:ignore */
+  .location .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+
+ /* hr */
+.featurette-divider{
+    margin: 1.5rem;
+    background-color: #dc9123;
+}
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+.location{
+    padding-bottom: 8rem;
+    margin-bottom: 1rem;
+    padding-top: 10rem;
+    
+}
+
+
+/* ================form page ==============================*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  margin: 1rem 1rem;
+}
+
+.clear {
+  clear: both;
+}
+.formContainer{
+  margin: 3rem 2rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.cart_item_quantity{
+  width:2rem;
+  border:solid #e4dfd7;
+}
+
+.badge:hover{
+color: #dc9123;
+}
+
+.cart{
+  width:7rem;
+  text-align: center;
+}
+
+#allergies{
+  display: none;
+}

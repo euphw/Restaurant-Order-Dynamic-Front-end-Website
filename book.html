@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- ==========================Meta============================-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author1" content="Yuefeng Wang">
+  <meta name="email1" content="wang0873@algonquinlive.com">
+  <meta name="author2" content="Kaiwen Wu">
+  <meta name="email2" content="wu000290@algonquinlive.com">
+  <!-- ==========================CSS============================-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+
+  <title>Dragon Sky Restaurant Order Page</title>
+</head>
+
+<body>
+
+  <div id="page-container">
+    <div id="content-wrap">
+      <!-- ==========================Header starts here============================-->
+      <header>
+
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light ">
+          <div class="container">
+            <a href="index.html" class="navbar-brand mb-0 h1" id="logo">
+              <img class="d-inline-block align-top" src="images/logo.png" alt="logo" width="33" height="33">
+              Dragon Sky
+            </a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a href="index.html" class="nav-link active">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item  ">
+                  <a href="index.html#mealLink" class="nav-link">
+                    Menu
+                  </a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a href="index.html#aboutLink" class="nav-link 
+              dropdown-toggle" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a href="index.html#aboutLink" class="dropdown-item">
+                        About
+                      </a></li>
+                    <li><a href="index.html#locationLink" class="dropdown-item">
+                        Location
+                      </a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+            <div>
+              <div class="cartIcon ">
+                <svg id="cartIcon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-cart-x-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7.354 5.646 8.5 6.793l1.146-1.147a.5.5 0 0 1 .708.708L9.207 7.5l1.147 1.146a.5.5 0 0 1-.708.708L8.5 8.207 7.354 9.354a.5.5 0 1 1-.708-.708L7.793 7.5 6.646 6.354a.5.5 0 1 1 .708-.708z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="clear"> </div>
+      <!-- ==========================Header ends here============================-->
+      <div class="formContainer">
+        <main>
+          <div class="py-5 text-center">
+            <h1 class="heading">Checkout form</h1>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="mb-3">Your cart</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <!-- Cart data display here -->
+              </ul>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$<span id="total">0</span></strong>
+                </li>
+              </ul>
+
+
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-5">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+
+                  <div class="col-10">
+                    <label for="telephone" class="form-label">Telephone</label>
+                    <div class="input-group has-validation">
+                      <input type="text" class="form-control" id="telephong" placeholder="Telephone@(555)555-5555"
+                        required>
+                      <div class="invalid-feedback">
+                        Your telephone is required.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-10">
+                    <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+
+                  <div class="col-10">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                    <div class="invalid-feedback">
+                      Please enter your shipping address.
+                    </div>
+                  </div>
+
+                  <div class="col-10">
+                    <label for="address2" class="form-label">Address 2 <span
+                        class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="country" class="form-label">DeliverDate</label>
+                    <input type="text" class="form-control" id="datepicker" placeholder="04/09/2022">
+                    <div class="invalid-feedback">
+                      Please select a valid date.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="time" class="form-label">Deliver Time</label>
+                    <input type="time" class="form-control" id="time" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid time.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="Notes" class="form-label">Notes</label>
+                    <input type="text" class="form-control" id="zip" placeholder="Don't call,  send me a text.">
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkbox">
+                  <label class="form-check-label" for="checkbox">Do not need disposable tableware </label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="aller">
+                  <label class="form-check-label" for="aller">Have allergies</label>
+                </div>
+                <div id="allergies">
+                  <div class="col-sm-5">
+                    <label for="lastName" class="form-label">Describe Allergies</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Description of allergies is required.
+                    </div>
+                  </div>
+                </div>
+
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Payment</h4>
+
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Debit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Name on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                    <small class="text-muted">Full name as displayed on card</small>
+                    <div class="invalid-feedback">
+                      Name on card is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Credit card number</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Credit card number is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Security code required
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+                <button class="w-100 btn btn-lg" type="submit">Continue to checkout</button>
+              </form>
+            </div>
+          </div>
+        </main>
+
+
+      </div>
+
+
+
+
+
+    </div>
+    <!-- ==========================footer============================-->
+
+    <!-- FOOTER Yuefeng-->
+    <footer class="py-3 my-4" id="footer">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="index.html#mealLink" class="nav-link px-2 text-muted">Meal</a></li>
+        <li class="nav-item"><a href="index.html#aboutLink" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="index.html#locationLink" class="nav-link px-2 text-muted">Location</a></li>
+        <li class="nav-item"><a href="index.html#mealLink" class="nav-link px-2 text-muted">Order</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; Group 1 Present: Yuefeng Wang, Kaiwen Wu, Xiaoyang Mao</p>
+    </footer>
+  </div>
+  <!-- ==========================footer============================-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/book.js"></script>
+  <script src="js/form.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+</body>
+
+</html>

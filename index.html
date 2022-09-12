@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- ==========================Meta============================-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author1" content="Yuefeng Wang">
+  <meta name="email1" content="wang0873@algonquinlive.com">
+  <meta name="author2" content="Kaiwen Wu">
+  <meta name="email2" content="wu000290@algonquinlive.com">
+  <!-- ==========================CSS============================-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Dragon Sky Restaurant</title>
+</head>
+
+<body>
+  <!-- ======================Header start here======================-->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light ">
+      <div class="container">
+        <a href="#top" class="navbar-brand mb-0 h1" id="logo">
+          <img class="d-inline-block align-top" src="images/logo.png" alt="logo" width="33" height="33">
+          Dragon Sky
+        </a>
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link active">
+                Home
+              </a>
+            </li>
+            <li class="nav-item  ">
+              <a href="#mealLink" class="nav-link">
+                Menu
+              </a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a href="#aboutLink" class="nav-link 
+              dropdown-toggle" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a href="#aboutLink" class="dropdown-item">
+                    About
+                  </a></li>
+                <li><a href="#locationLink" class="dropdown-item">
+                    Location
+                  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="cartIcon " href="book.html">
+
+            <svg class="passData" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-cart-x-fill " viewBox="0 0 16 16">
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7.354 5.646 8.5 6.793l1.146-1.147a.5.5 0 0 1 .708.708L9.207 7.5l1.147 1.146a.5.5 0 0 1-.708.708L8.5 8.207 7.354 9.354a.5.5 0 1 1-.708-.708L7.793 7.5 6.646 6.354a.5.5 0 1 1 .708-.708z" />
+            </svg>
+            <p class="cartIcon totalQuantity">0</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ==========================Header ends here============================-->
+
+  <main id="top">
+    <!-- ==========================Carousel start here============================-->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/if-the-4665686_1920.jpg" alt="">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Delicious begains here</h1>
+              <p>Gives you a taste shock on the tip of your tongue </p>
+              <p><a class="btn btn-lg " href="#mealLink">Explore Meals</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/top-view-delicious-noodles-concept.jpg" alt="">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Fantastic Restaurant</h1>
+              <p>Learn more about how fabulous you have us. </p>
+              <p><a class="btn btn-lg " href="#aboutLink">About Us</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/dim-sum-ga0e2ea9c9_1920.jpg" alt="">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>We are here in your city</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, perspiciatis!</p>
+              <p><a class="btn btn-lg " href="#locationLink">Find location</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ==========================carousel start here============================-->
+
+    <!-- ==========================Menu start here============================-->
+    <section class="meal">
+      <h1 class="heading" id="meal">Our<span> Meal</span> </h1>
+      <div class="mealContainer py-5" id="mealLink">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/duck-2957809_1280.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+              <div class="card-body">
+                <h3>Peking Duck</h3>
+                <div class="item-details d-flex justify-content-between align-items-center">
+                  <span class="item-price">$12.99</span>
+                  <div class="amount" id="amount1">
+                    <button class="mealButton" value="-" id="sub1">—</button>
+                    <input type="text" value="0" id="text1" class="inputNum" readonly>
+                    <button class="mealButton" value="-" id="add1">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/soup.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <div class="card-body">
+                <h3>Delicious Soup</h3>
+                <div class="item-details d-flex justify-content-between align-items-center">
+                  <span class="item-price">$7.99</span>
+                  <div class="amount" id="amount1">
+                    <button class="mealButton" value="-" id="sub2">—</button>
+                    <input type="text" value="0" id="text2" class="inputNum" readonly>
+                    <button class="mealButton" value="-" id="add2">+</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/knedlickova-3815789_1280.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+              <div class="card-body">
+                <h3>Tasty Noodles</h3>
+                <div class="item-details d-flex justify-content-between align-items-center">
+                  <span class="item-price">$9.99</span>
+                  <div class="amount" id="amount1">
+                    <button class="mealButton" value="-" id="sub3">—</button>
+                    <input type="text" value="0" id="text3" class="inputNum" readonly>
+                    <button class="mealButton" value="-" id="add3">+</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/fried-rice-1762493_640.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+              <div class="card-body">
+                <h3>Fried Rice</h3>
+                <div class="item-details d-flex justify-content-between align-items-center">
+                  <span class="item-price">$9.99</span>
+                  <div class="amount" id="amount1">
+                    <button class="mealButton" value="-" id="sub4">—</button>
+                    <input type="text" value="0" id="text4" class="inputNum" readonly>
+                    <button class="mealButton" value="-" id="add4">+</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/dim-sum-ga0e2ea9c9_1920.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+              <div class="card-body">
+                <h3>Dumplings</h3>
+                <div class="item-details d-flex justify-content-between align-items-center">
+                  <span class="item-price">$6.99</span>
+                  <div class="amount" id="amount1">
+                    <button class="mealButton" value="-" id="sub5">—</button>
+                    <input type="text" value="0" id="text5" class="inputNum" readonly>
+                    <button class="mealButton" value="-" id="add5">+</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/goulash-2872112_1280.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+              <div class="card-body">
+                <h3>Special Ribs</h3>
+                <div class="item-details d-flex justify-content-between align-items-center">
+                  <span class="item-price">$15.99</span>
+                  <div class="amount" id="amount1">
+                    <button class="mealButton" value="-" id="sub0">—</button>
+                    <input type="text" value="0" id="text0" class="inputNum" readonly>
+                    <button class="mealButton" value="-" id="add0">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="heading2 text-end">Total quantity: <span class="totalQuantity"> 0</span><br>
+        <button class="btn btn-lg passData"> Check out</button>
+
+
+    </section>
+    <!-- ==========================Menu ends here============================-->
+
+    <!-- ==========================About start here============================-->
+    <section class="about">
+      <span id="aboutLink"></span>
+      <div class="aboutContent">
+        <span id="aboutLink"></span>
+        <h1 class="heading" id="about">About<span> Us</span> </h1>
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2>We cook the world's <span class="emp"><strong>best</strong></span> food <br>
+              <span class="text-muted">It’ll blow your mind!</span>
+            </h2>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetu
+              r adipisicing elit. Eveniet, dolore! Recusandae repudiandae corrupti voluptates ad.Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Ex facilis saepe corporis impedit!Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Eveniet, dolore! Recusandae repudiandae corrupti voluptates ad.Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Ex facilis saepe corporis impedit!
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="images/if-the-4665686_1920.jpg" alt=""
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================About ends here==========================-->
+
+    <!-- =========================Location start here==========================-->
+
+
+    <div class="container location">
+      <h1 class="heading" id="locationLink">Find your <span>nearest location</span> </h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="images/restaurant-2.jpg" alt="" class="rounded-circle img-fluid mx-auto" width="150" height="150"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <h2>Ottawa</h2>
+          <p>1385 Woodroffe Ave, Nepean, ON K2G 1V8</p>
+          <p>Tel:(540)990-2345</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="images/restaurant-1.jpg" alt="" class="rounded-circle img-fluid mx-auto" width="150" height="150"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <h2>Montreal</h2>
+          <p>1385 Woodroffe Ave, Nepean, ON K2G 1V8
+          </p>
+          <p>Tel:(540)990-2345</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="images/restaurant-3.jpg" alt="" class="rounded-circle img-fluid mx-auto" width="150" height="150"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <h2>Toronto</h2>
+          <p>1385 Woodroffe Ave, Nepean, ON K2G 1V8</p>
+          <p>Tel:(540)990-2345</p>
+        </div>
+      </div>
+      <!-- =========================Location ends here===========================-->
+  </main>
+
+  <!-- =========================Footer here===========================-->
+  <!-- FOOTER Yuefeng-->
+  <hr class="featurette-divider">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#top" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#mealLink" class="nav-link px-2 text-muted">Meal</a></li>
+      <li class="nav-item"><a href="#aboutLink" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="#locationLink" class="nav-link px-2 text-muted">Location</a></li>
+      <li class="nav-item"><a href="#mealLink" class="nav-link px-2 text-muted">Order</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; Group 1 Present: Yuefeng Wang, Kaiwen Wu, Xiaoyang Mao</p>
+
+  </footer>
+  <!-- ==========================Footer ends here============================-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
